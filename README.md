@@ -24,3 +24,30 @@ This project focuses on small, readable and reusable building blocks for Tajik t
 
 ```bash
 pip install tajik-ai-utils
+```
+
+## For local development
+
+```bash
+git clone https://github.com/HighOctaneGreatness/tajik-ai-utils.git
+cd tajik-ai-utils
+pip install -e ".[dev]"
+```
+
+## Usage
+
+```python
+from tajik_ai_utils import (
+    normalize_tajik_text,
+    clean_for_llm_dataset,
+    cyrillic_to_latin_tajik,
+    latin_to_cyrillic_tajik,
+)
+
+text = "  Салом    дунё!!!  Ин   як   матни   тоҷикӣ аст.  "
+
+print(normalize_tajik_text(text))
+print(clean_for_llm_dataset(text))
+print(cyrillic_to_latin_tajik("Салом Тоҷикистон"))
+print(latin_to_cyrillic_tajik("Salom Tojikiston"))
+```
