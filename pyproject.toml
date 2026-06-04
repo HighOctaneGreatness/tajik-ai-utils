@@ -17,7 +17,8 @@ keywords = [
   "rag",
   "text-processing",
   "transliteration",
-  "dataset-cleaning"
+  "dataset-cleaning",
+  "low-resource-language"
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -32,8 +33,13 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
-  "Topic :: Text Processing :: Linguistic"
+  "Topic :: Text Processing",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Software Development :: Libraries :: Python Modules"
 ]
+
+[project.scripts]
+tajik-ai-utils = "tajik_ai_utils.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/HighOctaneGreatness/tajik-ai-utils"
