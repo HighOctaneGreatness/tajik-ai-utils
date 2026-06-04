@@ -76,8 +76,9 @@ Salom Tojikiston
 ## Documentation
 
 - [Tajik RAG Preprocessing Example](docs/rag_preprocessing.md)
+- [Tajik Transliteration](docs/transliteration.md)
 - [Project Limitations](docs/limitations.md)
-
+  
 ## Development
 
 Run tests:
