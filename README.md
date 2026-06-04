@@ -13,6 +13,7 @@ Tajik is a low-resource language in modern AI tooling. This project aims to prov
 - Tajik Cyrillic to Latin transliteration
 - Tajik Latin to Cyrillic transliteration
 - Simple preprocessing utilities for search and chatbots
+- Command-line interface for quick text processing
 
 ## Why this project matters
 
@@ -34,7 +35,7 @@ cd tajik-ai-utils
 pip install -e ".[dev]"
 ```
 
-## Usage
+## Python Usage
 
 ```python
 from tajik_ai_utils import (
@@ -51,3 +52,55 @@ print(clean_for_llm_dataset(text))
 print(cyrillic_to_latin_tajik("Салом Тоҷикистон"))
 print(latin_to_cyrillic_tajik("Salom Tojikiston"))
 ```
+
+## CLI Usage
+
+After installing the package locally, you can use the command-line interface:
+
+```bash
+tajik-ai-utils normalize "  Салом    дунё!!!  "
+tajik-ai-utils clean-dataset "  Салом    дунё!!!  "
+tajik-ai-utils cyrillic-to-latin "Салом Тоҷикистон"
+tajik-ai-utils latin-to-cyrillic "Salom Tojikiston"
+```
+
+Example output:
+
+```text
+Салом дунё!
+Салом дунё!
+Salom Tojikiston
+Салом Тоҷикистон
+```
+
+## Development
+
+Run tests:
+
+```bash
+pytest
+```
+
+Run linting:
+
+```bash
+ruff check .
+```
+
+## Roadmap
+
+- Improve Tajik-specific punctuation rules
+- Add better mixed Cyrillic/Latin detection
+- Improve transliteration accuracy with more edge cases
+- Add dataset validation helpers
+- Add more examples for RAG and LLM preprocessing
+- Publish package to PyPI
+- Add documentation in Tajik and Russian
+
+## Project status
+
+Early-stage, actively developed.
+
+## License
+
+MIT License.
