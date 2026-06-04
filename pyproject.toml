@@ -1,0 +1,54 @@
+[project]
+name = "tajik-ai-utils"
+version = "0.1.0"
+description = "Utilities for cleaning, normalizing and preparing Tajik-language text for AI and NLP workflows."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "HighOctaneGreatness" }
+]
+keywords = [
+  "tajik",
+  "tajik-language",
+  "nlp",
+  "ai",
+  "llm",
+  "rag",
+  "text-processing",
+  "transliteration",
+  "dataset-cleaning"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Tajik",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+Homepage = "https://github.com/HighOctaneGreatness/tajik-ai-utils"
+Repository = "https://github.com/HighOctaneGreatness/tajik-ai-utils"
+Issues = "https://github.com/HighOctaneGreatness/tajik-ai-utils/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.4.0"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
