@@ -73,6 +73,10 @@ Salom Tojikiston
 Салом Тоҷикистон
 ```
 
+## Documentation
+
+- [Tajik RAG Preprocessing Example](docs/rag_preprocessing.md)
+- [Project Limitations](docs/limitations.md)
 
 ## Development
 
